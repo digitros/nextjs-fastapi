@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -15,13 +16,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+* {
+  font-family: "Poppins", sans-serif;
+}
 body {
-  color: rgb(var(--foreground-rgb));
+  margin: 0;
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
