@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<p align="center">Simple Next.js boilerplate that uses BOTH <a href="https://fastapi.tiangolo.com/">FastAPI</a> AND NEXTJS 13 as the API backend unlike
+<p align="center">Simple Next.js boilerplate that uses BOTH <a href="https://fastapi.tiangolo.com/">FastAPI</a> AND NEXTJS 13 as the API backend unlike [the example offered by NextJS](https://github.com/digitros/nextjs-fastapi)
 
 <br/>
 
@@ -32,14 +32,14 @@ https://nextjs-fastapi-starter.vercel.app/
 
 You can clone & deploy it to Vercel with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdigitros%2Fnextjs-fastapi%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpsycho-baller%2Fnextjs-and-fastapi-backend%2Ftree%2Fmain)
 
 ## Developing Locally
 
 You can clone & create this repo with the following command
 
 ```bash
-npx create-next-app nextjs-fastapi --example "https://github.com/digitros/nextjs-fastapi"
+npx create-next-app nextjs-fastapi --example "https://github.com/psycho-baller/nextjs-and-fastapi-backend"
 ```
 
 ## Getting Started
