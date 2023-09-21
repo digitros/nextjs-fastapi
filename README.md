@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<p align="center">Simple Next.js boilerplate that uses BOTH <a href="https://fastapi.tiangolo.com/">FastAPI</a> AND NEXTJS 13 as the API backend unlike [the example offered by NextJS](https://github.com/digitros/nextjs-fastapi)
+<p align="center">Simple Next.js boilerplate that uses BOTH <a href="https://fastapi.tiangolo.com/">FastAPI</a> AND NEXTJS 13 as the API backend unlike <a href="https://github.com/digitros/nextjs-fastapi" >the example offered by NextJS</a>
 
 <br/>
 
@@ -15,7 +15,7 @@ This is a hybrid Next.js + Python app that uses a fullstack Next.js application 
 
 ## How It Works
 
-The Python/FastAPI server is mapped into to Next.js app under `/api/py/` and the NextJS is mapped to `/api/`.
+The Python/FastAPI server is mapped into to Next.js app under `/api/py/`(easily changeable) and the NextJS is mapped to `/api/`.
 
 
 This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/py/:path*` to the FastAPI API, which is hosted in the `/api` folder.
