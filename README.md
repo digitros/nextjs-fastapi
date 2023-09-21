@@ -5,19 +5,20 @@
   </a>
 </p>
 
-<p align="center">Simple Next.js boilerplate that uses <a href="https://fastapi.tiangolo.com/">FastAPI</a> as the API backend.</p>
+<p align="center">Simple Next.js boilerplate that uses BOTH <a href="https://fastapi.tiangolo.com/">FastAPI</a> AND NEXTJS 13 as the API backend unlike <a href="https://github.com/digitros/nextjs-fastapi" >the example offered by NextJS</a>
 
 <br/>
 
 ## Introduction
 
-This is a hybrid Next.js + Python app that uses Next.js as the frontend and FastAPI as the API backend. One great use case of this is to write Next.js apps that use Python AI libraries on the backend.
+This is a hybrid Next.js + Python app that uses a fullstack Next.js application and FastAPI as another API backend. One great use case of this is to write Next.js apps that use Python AI libraries on the backend.
 
 ## How It Works
 
-The Python/FastAPI server is mapped into to Next.js app under `/api/`.
+The Python/FastAPI server is mapped into to Next.js app under `/api/py/`(easily changeable) and the NextJS is mapped to `/api/`.
 
-This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/:path*` to the FastAPI API, which is hosted in the `/api` folder.
+
+This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/py/:path*` to the FastAPI API, which is hosted in the `/api` folder.
 
 On localhost, the rewrite will be made to the `127.0.0.1:8000` port, which is where the FastAPI server is running.
 
@@ -31,14 +32,14 @@ https://nextjs-fastapi-starter.vercel.app/
 
 You can clone & deploy it to Vercel with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdigitros%2Fnextjs-fastapi%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpsycho-baller%2Fnextjs-and-fastapi-backend%2Ftree%2Fmain)
 
 ## Developing Locally
 
 You can clone & create this repo with the following command
 
 ```bash
-npx create-next-app nextjs-fastapi --example "https://github.com/digitros/nextjs-fastapi"
+npx create-next-app nextjs-fastapi --example "https://github.com/psycho-baller/nextjs-and-fastapi-backend"
 ```
 
 ## Getting Started
@@ -51,6 +52,14 @@ npm install
 yarn
 # or
 pnpm install
+```
+
+Create a virtual environment and install the dependencies for the FastAPI server:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Then, run the development server:
