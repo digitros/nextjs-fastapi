@@ -53,6 +53,15 @@ yarn
 pnpm install
 ```
 
+Second, initialize virtual python environment:
+```bash
+cd nextjs-fastapi
+# then create a virtual environment
+python3 -m venv env
+# then activate the virtual environment:
+source env/bin/activate
+```
+
 Then, run the development server:
 
 ```bash
