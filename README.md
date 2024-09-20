@@ -5,19 +5,21 @@
   </a>
 </p>
 
-<p align="center">Simple Next.js boilerplate that uses <a href="https://fastapi.tiangolo.com/">FastAPI</a> as the API backend.</p>
+<p align="center">Simple Next.j 14 boilerplate that uses <a href="https://fastapi.tiangolo.com/">FastAPI</a> as the API backend.</p>
 
 <br/>
 
 ## Introduction
 
-This is a hybrid Next.js + Python app that uses Next.js as the frontend and FastAPI as the API backend. One great use case of this is to write Next.js apps that use Python AI libraries on the backend.
+This is a hybrid Next.js 14 + Python template. One great use case of this is to write Next.js apps that use Python AI libraries on the backend, while still having the benefits of Next.js Route Handlers and Server Side Rendering.
 
 ## How It Works
 
 The Python/FastAPI server is mapped into to Next.js app under `/api/`.
 
-This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/:path*` to the FastAPI API, which is hosted in the `/api` folder.
+This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/py/:path*` to the FastAPI API, which is hosted in the `/api` folder.
+
+Also, the app/api routes are available on the same domain, so you can use NextJs Route Handlers and make requests to `/api/...`.
 
 On localhost, the rewrite will be made to the `127.0.0.1:8000` port, which is where the FastAPI server is running.
 
@@ -43,7 +45,14 @@ npx create-next-app nextjs-fastapi --example "https://github.com/digitros/nextjs
 
 ## Getting Started
 
-First, install the dependencies:
+First, create and activate a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Then, install the dependencies:
 
 ```bash
 npm install
@@ -53,7 +62,7 @@ yarn
 pnpm install
 ```
 
-Then, run the development server:
+Then, run the development server(python dependencies will be installed automatically here):
 
 ```bash
 npm run dev
