@@ -49,7 +49,10 @@ First, create and activate a virtual environment:
 
 ```bash
 python3 -m venv venv
+# then
 source venv/bin/activate
+# or
+source venv/Scripts/activate
 ```
 
 Then, install the dependencies:
